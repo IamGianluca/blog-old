@@ -4,17 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About Me | fastpages</title>
+<title>How to mount a remote filesystem using SSHFS | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="About Me" />
+<meta property="og:title" content="How to mount a remote filesystem using SSHFS" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://iamgianluca.github.io/fastpages-blog/about/" />
-<meta property="og:url" content="https://iamgianluca.github.io/fastpages-blog/about/" />
+<meta name="description" content="Mount a remote filesystem using SSHFS" />
+<meta property="og:description" content="Mount a remote filesystem using SSHFS" />
+<link rel="canonical" href="https://iamgianluca.github.io/fastpages-blog/linux/2021/05/26/sshfs.html" />
+<meta property="og:url" content="https://iamgianluca.github.io/fastpages-blog/linux/2021/05/26/sshfs.html" />
 <meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-26T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://iamgianluca.github.io/fastpages-blog/about/","@type":"WebSite","headline":"About Me","name":"fastpages","description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"url":"https://iamgianluca.github.io/fastpages-blog/linux/2021/05/26/sshfs.html","@type":"BlogPosting","headline":"How to mount a remote filesystem using SSHFS","dateModified":"2021-05-26T00:00:00-05:00","datePublished":"2021-05-26T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://iamgianluca.github.io/fastpages-blog/linux/2021/05/26/sshfs.html"},"description":"Mount a remote filesystem using SSHFS","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://iamgianluca.github.io/fastpages-blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages-blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -66,27 +68,58 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About Me</h1>
-  </header>
+    <h1 class="post-title p-name" itemprop="name headline">How to mount a remote filesystem using SSHFS</h1><p class="page-description">Mount a remote filesystem using SSHFS</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-05-26T00:00:00-05:00" itemprop="datePublished">
+        May 26, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
-  <div class="post-content">
-    <p>This website is powered by <strong><a href="https://github.com/fastai/fastpages">fastpages</a></strong> <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastpages-blog/categories/#linux">linux</a>
+        
+      
+      </p>
+    
 
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>a blogging platform that natively supports Jupyter notebooks in addition to other formats. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+    </header>
 
-  </div>
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><p>Today, I want to share how you can mount a remote drive locally. This is particularly useful when developing on a remote server. For instance, if we’re working on a computer vision task, we might want to see how some of the training images look.</p>
 
+<blockquote>
+  <p>SSHFS allows you to mount a remote filesystem using SFTP. Most SSH servers support and enable this SFTP access by default, so SSHFS is very simple to use - there’s nothing to do on the server-side.</p>
+</blockquote>
+
+<p>Let’s first install <a href="https://github.com/libfuse/sshfs"><code class="language-plaintext highlighter-rouge">sshfs</code></a>. In Ubuntu, you can do it with the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install sshfs
+</code></pre></div></div>
+
+<p>We need to create an empty directory (a.k.a. mountpoint) to mount the remote drive. Let’s call this folder <code class="language-plaintext highlighter-rouge">my_folder</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir ~/my_folder
+</code></pre></div></div>
+
+<p>Finally, let’s mount the remote filesystem:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sshfs -o follow_symlinks &lt;user&gt;@&lt;server address&gt;:/ ~/my_folder
+</code></pre></div></div>
+
+<p>There you go! When you use your file explorer to open <code class="language-plaintext highlighter-rouge">my_folder,</code> you’ll see the remote drive mounted.</p>
+
+
+  </div><a class="u-url" href="/fastpages-blog/linux/2021/05/26/sshfs.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/fastpages-blog/"></data>
