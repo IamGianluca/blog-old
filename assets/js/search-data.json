@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "How to mount a remote filesystem using SSHFS",
+            "title": "The easiest way to browse images stored in a remote server",
             "content": "Today, I want to share how you can mount a remote drive locally. This is particularly useful when developing on a remote server. For instance, if we’re working on a computer vision task, we might want to see how some of the training images look. . SSHFS allows you to mount a remote filesystem using SFTP. Most SSH servers support and enable this SFTP access by default, so SSHFS is very simple to use - there’s nothing to do on the server-side. . Let’s first install sshfs. In Ubuntu, you can do it with the following command: . $ sudo apt install sshfs . We need to create an empty directory (a.k.a. mountpoint) to mount the remote drive. Let’s call this folder my_folder: . $ mkdir ~/my_folder . Finally, let’s mount the remote filesystem: . $ sshfs -o follow_symlinks &lt;user&gt;@&lt;server address&gt;:/ ~/my_folder . There you go! When you use your file explorer to open my_folder, you’ll see the remote drive mounted. .",
-            "url": "https://iamgianluca.github.io/fastpages-blog/linux/2021/05/26/sshfs.html",
-            "relUrl": "/linux/2021/05/26/sshfs.html",
+            "url": "https://iamgianluca.github.io/fastpages-blog/linux/productivity/2021/05/26/sshfs.html",
+            "relUrl": "/linux/productivity/2021/05/26/sshfs.html",
             "date": " • May 26, 2021"
         }
         
@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "Hi, my name is Gianluca and I’m a data scientist based in New York. I’m passionate about building ML/AI systems and learning in general. .",
+          "content": "Hi, my name is Gianluca, and I’m a data scientist based in New York. I’m passionate about building ML/AI systems and lifelong learning. . My career in Data Science started in London (UK) in 2013, where I joined a start-up focusing on Display Retargeting. Since then, many things have changed, and I’ve been fortunate to meet many incredible people who helped me shape who I am. . This blog aims to share some of what I learned along the way and hopefully connect with like-minded people. .",
           "url": "https://iamgianluca.github.io/fastpages-blog/about/",
           "relUrl": "/about/",
           "date": ""
