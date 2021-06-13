@@ -4,8 +4,17 @@ title: About Me
 permalink: /about/
 ---
 
-Hi, my name is Gianluca, and I'm a data scientist based in New York. I'm passionate about building ML/AI systems and lifelong learning.
+Hi :wave:
 
-My career in Data Science started in London (UK) in 2013, where I joined a start-up focusing on RTB for online advertising. Since then, many things have changed, and I've been fortunate to meet many incredible people who helped me shape who I am.
+My name is Gianluca and I'm a Data Science Manager based in New York City.
 
-This blog aims to share some of what I've learned along the way and hopefully connect with like-minded people. I hope you find the content useful to you. If you like it, feel free to share it with others. My ultimate goal is to make ML/DL more accessible.
+My career in Data Science started in London (UK) in 2013, where I joined a start-up focusing on Real-Time Bidding (RTB) for digital advertising. Since then, many things have changed, and I've been fortunate to meet many incredible people who helped me shape who I am.
+
+I'm passionate about ML/DL and how this technology is changing the world. On my spare time, I'm always working on side projects involving ML/DL or reading the latest research papers. 
+
+My motivations to start blogging are:
+1. Build a bigger platform to share my knowledge and advice.
+2. To quote Richard Feynman, "*If you want to master something, teach it.*"
+3. Connect with a wider network of likeminded people.
+
+I hope you enjoy the content. If you have any feedback, reach out to me at my email address: "gr\<dot\>gianlucarossi\<at\>gmail\<dot\>com".
