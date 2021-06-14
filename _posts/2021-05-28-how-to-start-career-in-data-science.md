@@ -8,7 +8,7 @@ title: How to start a career in Data Science
 
 # Intro
 
-I've been asked this question many times by young practitioners and recent graduates. "*How can I start a career in Data Science?*". 
+I've been asked this question many times by young practitioners and recent graduates. "*What advice would you give to someone starting a career in Data Science?*". 
 
 # Fall in love with the process
 
@@ -20,7 +20,7 @@ You need to be curious and have a genuine interest in understanding how things t
 
 If you are not sure if Data Science is really something you love, take a semester to complete an excellent online course like [fast.ai](https://www.fast.ai/) and work on one or two [Kaggle](https://www.kaggle.com/) competitions. This should give you first-hand experience of what the job is all about, although not a complete one. 
 
-fast.ai's ["Practical Deep Learning for Coders"](https://course.fast.ai/) and ["Deep Learning from the Foundations"](https://course19.fast.ai/part2) are excellent courses. They have a strong emphasis on the practical aspect and teach you good practice in building knowledge and being effective.
+fast.ai's ["Practical Deep Learning for Coders"](https://course.fast.ai/) and ["Deep Learning from the Foundations"](https://course19.fast.ai/part2) are excellent courses.  They strongly emphasize the practical aspect and teach you good practice in building knowledge and being effective.
 
 ![]({{ site.baseurl }}/images/fastai_logo.png "Fig 1: fast.ai is a non-profit research group focused on deep learning and artificial intelligence.")
 
@@ -36,7 +36,7 @@ One of the biggest mistakes I've seen many beginners make is to spend a dispropo
 
 How can you find the right balance between theory and practice? Use your curiosity and First Principle Thinking. Focus on building knowledge. If you don't understand how something works, don't be discouraged. Write some code ― see the excellent keynote from John Rauser at Strata  + Hadoop 2014 ― or search the internet. Learn as you need and make sure that every new concept sits on a mental map of the space.
 
-> https://www.youtube.com/watch?v=5Dnw46eC-0o
+{% include youtube.html content='<a href="https://youtu.be/5Dnw46eC-0o">https://youtu.be/5Dnw46eC-0o</a>' %}
 
 # Make your project fantastic
 
