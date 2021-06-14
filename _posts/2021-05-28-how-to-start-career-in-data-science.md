@@ -1,6 +1,7 @@
 ---
 toc: true
 layout: post
+comments: true
 description: How true passion and a good system can take you anywhere
 categories: [deep learning, machine learning, advice]
 title: How to start a career in Data Science
