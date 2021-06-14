@@ -1,6 +1,7 @@
 ---
 toc: true
 layout: post
+comments: true
 description: Increase you productivity and build lasting knowledge
 categories: [deep learning, machine learning, productivity]
 title: How to become a more effective ML/DL practitioner
