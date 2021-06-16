@@ -1,1 +1,1 @@
-Sitemap: https://iamgianluca.github.io/fastpages-blog/sitemap.xml
+Sitemap: https://iamgianluca.github.io/blog/sitemap.xml
