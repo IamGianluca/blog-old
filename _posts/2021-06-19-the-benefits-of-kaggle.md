@@ -7,7 +7,7 @@ categories: [kaggle, community]
 title: On the benefits of Kaggle
 ---
 
-A recent post on Twitter made me realize many don't understand yet the actual value Kaggle brings to the larger ML community and Kagglers. 
+A recent post on Twitter made me realize many don't notice the actual value Kaggle brings to the larger ML community and Kagglers. 
 
 {% twitter https://twitter.com/skyetetra/status/1405243698888118274 %}
 
@@ -35,13 +35,13 @@ In this sense, Kaggle is a free apprenticeship led by the community.
 
 There are also enormous benefits for people that have already established a career in ML. By participating in Kaggle competitions, you can get exposure to ML tasks you don't face at work and keep up with the SOTA. In addition, constant exposure to best practices and tools allows Kagglers to continuously acquire new skills and get ready for even bigger challenges in the future.
 
-For every Kagglers, the beauty of the platform is not about the Public and Private Leaderboard. Those are just a tool to incentive people to go the extra mile. Kaggle is about learning. 
+For every Kagglers, the beauty of the platform is not about the Private Leaderboard or the Globa Ranking. Those are just a tool to encourage people to go the extra mile. Kaggle is about learning. 
 
 The platform is also rewarding people for sharing good datasets, notebooks, and discussions. I would also argue that many users don't care about the Leaderboard and Rankings in general. Those are just side effects, and people have real lives. In a sense, it's like running or any other hobby. Not everyone trains to win the Boston Marathon or the Olympics. Most people run just because it's a healthy habit.
 
 ## It's a level playing field
 
-Not everyone is lucky to work for a leading tech company, surrounded by dozens, if not hundreds, of the best minds in the field. Kaggle lets you learn from some of the very best talents in the industry, even if you live far from where the ML buzz happens. The only limit to your ability to improve is your motivation to try new things, read what others are sharing, and interacting with them.
+Not everyone is lucky to work for a leading tech company, surrounded by dozens, if not hundreds, of the best minds in the field. Kaggle lets you learn from some of the very best talents in the industry, even if you live far from where the ML buzz happens. The only limit to your ability to grow is your motivation to try new things, read what others are sharing, and interacting with them.
 
 At the end of each competition, every top-ranked team shares a description of their solution. Sometimes, top-ranked contestants even share the code used to generate their submission. This knowledge-sharing tradition contributes to creating a repository of knowledge everyone can use in future competitions and real-life challenges. Moreover, this knowledge is open to everyone and not hidden behind a paywall. 
 
@@ -50,3 +50,7 @@ At the end of each competition, every top-ranked team shares a description of th
 Nowadays, to be competitive in a Kaggle challenge, it is not sufficient to use out-of-the-box solutions. Instead, competitors often merge ideas from recent research papers or even create entirely new methods later published.
 
 The competition in every Kaggle competition is so fierce that recently released models and tools are immediately tested. This is a great way to gain an understanding of how generalizable are the results of research papers. 
+
+## Conclusion
+
+In summary, Kaggle is a positive-sum game for society and an excellent investment of your time if you're interested in becoming a better data scientist and stay up to date. I hope more people join this vibrant and welcoming community.
